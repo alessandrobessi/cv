@@ -27,6 +27,11 @@ function renderContact(basics) {
   return parts.join('<span class="sep">·</span>');
 }
 
+function renderDateRange(startDate, endDate) {
+  if (startDate && endDate) return `${escapeHtml(startDate)} – ${escapeHtml(endDate)}`;
+  return escapeHtml(startDate || endDate || '');
+}
+
 function renderExperience(experience = []) {
   return experience
     .map(
@@ -34,7 +39,7 @@ function renderExperience(experience = []) {
     <div class="entry">
       <div class="entry-header">
         <span class="entry-title">${escapeHtml(job.role)} · ${escapeHtml(job.company)}</span>
-        <span class="entry-dates">${escapeHtml(job.startDate)} – ${escapeHtml(job.endDate)}</span>
+        <span class="entry-dates">${renderDateRange(job.startDate, job.endDate)}</span>
       </div>
       <div class="entry-subtitle">${escapeHtml(job.location)}</div>
       <ul>
@@ -54,7 +59,7 @@ function renderEducation(education = []) {
     <div class="entry">
       <div class="entry-header">
         <span class="entry-title">${escapeHtml(edu.degree)}, ${escapeHtml(edu.field)}</span>
-        <span class="entry-dates">${escapeHtml(edu.startDate)} – ${escapeHtml(edu.endDate)}</span>
+        <span class="entry-dates">${renderDateRange(edu.startDate, edu.endDate)}</span>
       </div>
       <div class="entry-subtitle">${escapeHtml(edu.institution)} · ${escapeHtml(edu.location)}</div>
       ${edu.details ? `<p>${escapeHtml(edu.details)}</p>` : ''}
@@ -92,8 +97,25 @@ function renderProjects(projects = []) {
     .join('\n');
 }
 
+function renderBooks(books = []) {
+  return books
+    .map(
+      (book) => `
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">
+          ${book.url ? `<a href="${escapeHtml(book.url)}">${escapeHtml(book.title)}</a>` : escapeHtml(book.title)}
+        </span>
+        ${book.year ? `<span class="entry-dates">${escapeHtml(book.year)}</span>` : ''}
+      </div>
+      ${book.description ? `<p>${escapeHtml(book.description)}</p>` : ''}
+    </div>`
+    )
+    .join('\n');
+}
+
 export function renderResume(data) {
-  const { basics, summary, experience, education, skills, projects } = data;
+  const { basics, summary, experience, education, skills, projects, books } = data;
 
   return `<!doctype html>
 <html lang="en">
@@ -136,6 +158,11 @@ export function renderResume(data) {
     ${projects?.length ? `<section>
       <h2>Projects</h2>
       ${renderProjects(projects)}
+    </section>` : ''}
+
+    ${books?.length ? `<section>
+      <h2>Books</h2>
+      ${renderBooks(books)}
     </section>` : ''}
   </main>
 </body>

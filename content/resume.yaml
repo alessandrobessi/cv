@@ -1,48 +1,76 @@
 basics:
-  name: "Jordan Rivera"
-  title: "Senior Software Engineer"
-  email: "jordan.rivera@example.com"
-  phone: "+1 (555) 012-3456"
-  location: "Remote / Austin, TX"
-  website: "https://jordanrivera.dev"
+  name: "Alessandro Bessi"
+  title: "AI Engineer"
+  email: "alessandro.bessi@proton.me"
+  phone: "+39 331 3427237"
+  location: "Remote / Firenze, Italy"
+  website: "https://alessandrobessi.com"
   links:
     - label: "GitHub"
-      url: "https://github.com/jordanrivera"
+      url: "https://github.com/alessandrobessi"
     - label: "LinkedIn"
-      url: "https://linkedin.com/in/jordanrivera"
+      url: "https://linkedin.com/in/alessandrobessi"
+    - label: "Labs"
+      url: "https://bessilabs.com"
+    - label: "Personal"
+      url: "https://alessandrobessi.com"
+    - label: "YouTube"
+      url: "https://www.youtube.com/@bessimaestro"  
 
 summary: >
-  Software engineer with 8+ years of experience building and scaling
-  backend systems and developer tooling. Enjoys mentoring, API design,
-  and turning ambiguous problems into shipped products.
+  Alessandro Bessi is an AI expert, data scientist, and software engineer 
+  whose work spans machine learning, complex systems, and the infrastructure 
+  required to make intelligent systems work in practice.
 
 experience:
-  - company: "Acme Corp"
-    role: "Senior Software Engineer"
-    location: "Austin, TX"
-    startDate: "2021-06"
+  - company: "Negentro"
+    role: "AI Engineer"
+    location: "Remote / Milan, Italy"
+    startDate: "2025-05"
     endDate: "Present"
     highlights:
       - "Led migration of a monolith to service-oriented architecture, cutting deploy time by 60%."
       - "Mentored 4 junior engineers; introduced code review guidelines adopted org-wide."
       - "Designed an internal CLI tool used by 30+ engineers daily."
-  - company: "Globex Inc"
-    role: "Software Engineer"
-    location: "Remote"
-    startDate: "2018-01"
-    endDate: "2021-05"
+  - company: "Nextbit"
+    role: "AI Engineer"
+    location: "Remote / Milan, Italy"
+    startDate: "2017-03"
+    endDate: "Present"
     highlights:
       - "Built REST APIs serving 2M+ daily requests."
       - "Reduced test suite runtime from 40 to 12 minutes."
 
 education:
-  - institution: "University of Texas at Austin"
-    degree: "B.S."
+  - institution: "University of Southern California"
+    degree: "Postdoctoral Research"
     field: "Computer Science"
-    location: "Austin, TX"
-    startDate: "2014-08"
-    endDate: "2018-05"
-    details: "Graduated with honors."
+    location: "Marina del Rey, CA, USA"
+    endDate: "2017"
+  
+  - institution: "IUSS Pavia"
+    degree: "Ph.D."
+    field: "Economics and Social Sciences"
+    location: "Pavia, Italy"
+    endDate: "2016"
+
+  - institution: "Sant'Anna School of Advanced Studies"
+    degree: "Ph.D."
+    field: "Economics and Social Sciences"
+    location: "Pisa, Italy"
+    endDate: "2016"
+  
+  - institution: "University of Firenze"
+    degree: "M.Sc. cum laude"
+    field: "Statistics"
+    location: "Firenze, Italy"
+    endDate: "2013"
+  
+  - institution: "University of Firenze"
+    degree: "B.A."
+    field: "Economics"
+    location: "Firenze, Italy"
+    endDate: "2010"
 
 skills:
   - category: "Languages"
@@ -53,11 +81,28 @@ skills:
     items: ["CI/CD", "Testing", "System Design", "Mentoring"]
 
 projects:
-  - name: "openapi-lint"
-    description: "CLI tool that lints OpenAPI specs for common design mistakes."
-    url: "https://github.com/jordanrivera/openapi-lint"
-    tech: ["Node.js", "TypeScript"]
-  - name: "habit-tracker"
-    description: "Small self-hosted habit tracking web app."
-    url: "https://github.com/jordanrivera/habit-tracker"
-    tech: ["React", "SQLite"]
+  - name: "efficient-ai-lab"
+    description: >
+      A 12-week research and engineering program investigating how to run
+      small language models efficiently on CPU-only infrastructure, spanning
+      transformer inference fundamentals through production deployment and
+      architectural decision-making for small language models.
+    url: "https://github.com/alessandrobessi/efficient-ai-lab"
+    tech: ["Python", "Go", "llama.cpp", "Docker", "Kubernetes"]
+
+books:
+  - title: "Thinking in Packets: A Mental Model for Computer Networks"
+    description: >
+      An accessible introduction to computer networking for readers without a
+      technical background, building understanding from the simplest
+      networking problem up to modern internet infrastructure — covering
+      signals, IP addressing, routing, DNS, encryption, HTTP, and cloud
+      networking.
+    url: "https://alessandrobessi.github.io/thinking-in-packets"
+  - title: "Thinking in Tokens: A Mental Model for Modern AI Systems"
+    description: >
+      A conceptual introduction to modern AI for curious readers without a
+      math or programming background, explaining tokens, embeddings,
+      transformers, and hallucination as one cumulative mental model rather
+      than a list of disconnected techniques.
+    url: "https://alessandrobessi.github.io/thinking-in-tokens"
