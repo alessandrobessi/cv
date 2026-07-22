@@ -1,0 +1,156 @@
+:root {
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --color-text: #1a1a1a;
+  --color-muted: #555;
+  --color-accent: #2454b8;
+  --max-width: 800px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.5;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.resume {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.title {
+  margin: 0.2rem 0 0.6rem;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
+.contact {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.contact a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.sep {
+  margin: 0 0.4rem;
+}
+
+.download-pdf {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.entry {
+  margin-bottom: 1.1rem;
+  break-inside: avoid;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.entry-title {
+  font-weight: 600;
+}
+
+.entry-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.entry-dates {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.entry-subtitle {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.entry ul {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.entry p {
+  margin: 0.3rem 0 0;
+}
+
+.skill-group {
+  margin-bottom: 0.4rem;
+}
+
+.skill-category {
+  font-weight: 600;
+  margin-right: 0.4rem;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .resume {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+}

@@ -1,0 +1,63 @@
+basics:
+  name: "Jordan Rivera"
+  title: "Senior Software Engineer"
+  email: "jordan.rivera@example.com"
+  phone: "+1 (555) 012-3456"
+  location: "Remote / Austin, TX"
+  website: "https://jordanrivera.dev"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/jordanrivera"
+    - label: "LinkedIn"
+      url: "https://linkedin.com/in/jordanrivera"
+
+summary: >
+  Software engineer with 8+ years of experience building and scaling
+  backend systems and developer tooling. Enjoys mentoring, API design,
+  and turning ambiguous problems into shipped products.
+
+experience:
+  - company: "Acme Corp"
+    role: "Senior Software Engineer"
+    location: "Austin, TX"
+    startDate: "2021-06"
+    endDate: "Present"
+    highlights:
+      - "Led migration of a monolith to service-oriented architecture, cutting deploy time by 60%."
+      - "Mentored 4 junior engineers; introduced code review guidelines adopted org-wide."
+      - "Designed an internal CLI tool used by 30+ engineers daily."
+  - company: "Globex Inc"
+    role: "Software Engineer"
+    location: "Remote"
+    startDate: "2018-01"
+    endDate: "2021-05"
+    highlights:
+      - "Built REST APIs serving 2M+ daily requests."
+      - "Reduced test suite runtime from 40 to 12 minutes."
+
+education:
+  - institution: "University of Texas at Austin"
+    degree: "B.S."
+    field: "Computer Science"
+    location: "Austin, TX"
+    startDate: "2014-08"
+    endDate: "2018-05"
+    details: "Graduated with honors."
+
+skills:
+  - category: "Languages"
+    items: ["JavaScript", "TypeScript", "Python", "Go"]
+  - category: "Frameworks & Tools"
+    items: ["Node.js", "React", "Docker", "PostgreSQL", "AWS"]
+  - category: "Practices"
+    items: ["CI/CD", "Testing", "System Design", "Mentoring"]
+
+projects:
+  - name: "openapi-lint"
+    description: "CLI tool that lints OpenAPI specs for common design mistakes."
+    url: "https://github.com/jordanrivera/openapi-lint"
+    tech: ["Node.js", "TypeScript"]
+  - name: "habit-tracker"
+    description: "Small self-hosted habit tracking web app."
+    url: "https://github.com/jordanrivera/habit-tracker"
+    tech: ["React", "SQLite"]
