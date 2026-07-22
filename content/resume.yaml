@@ -13,12 +13,18 @@ basics:
     - label: "BessiLabs"
       url: "https://bessilabs.com"
     - label: "YouTube"
-      url: "https://www.youtube.com/@bessimaestro"  
+      url: "https://www.youtube.com/@bessimaestro"
+    - label: "Google Scholar"
+      url: "https://scholar.google.com/citations?hl=en&user=4QiUu3AAAAAJ&view_op=list_works"
 
 summary: >
-  Alessandro Bessi is an AI expert, data scientist, and software engineer 
-  whose work spans machine learning, complex systems, and the infrastructure 
-  required to make intelligent systems work in practice.
+  Alessandro Bessi is an AI expert, data scientist, and software engineer
+  whose work spans machine learning, complex systems, and the infrastructure
+  required to make intelligent systems work in practice. He holds a Ph.D. in
+  Economics and Social Sciences from Sant'Anna School of Advanced Studies and
+  IUSS Pavia, completed postdoctoral research in Computer Science at the
+  University of Southern California, and is a published author on computer
+  networks and AI systems.
 
 experience:
   - company: "Negentro"
