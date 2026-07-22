@@ -42,6 +42,12 @@ experience:
       - "Reduced test suite runtime from 40 to 12 minutes."
 
 education:
+  - institution: "Imperial College Business School"
+    degree: "Master in Venture Capital and Startup Investing"
+    field: "Entrepreneurship and Innovation"
+    location: "Remote / London, UK"
+    endDate: "2023"
+
   - institution: "University of Southern California"
     degree: "Postdoctoral Research"
     field: "Computer Science"
