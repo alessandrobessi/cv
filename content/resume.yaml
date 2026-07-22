@@ -10,10 +10,8 @@ basics:
       url: "https://github.com/alessandrobessi"
     - label: "LinkedIn"
       url: "https://linkedin.com/in/alessandrobessi"
-    - label: "Labs"
+    - label: "BessiLabs"
       url: "https://bessilabs.com"
-    - label: "Personal"
-      url: "https://alessandrobessi.com"
     - label: "YouTube"
       url: "https://www.youtube.com/@bessimaestro"  
 
@@ -53,17 +51,11 @@ education:
     field: "Computer Science"
     location: "Marina del Rey, CA, USA"
     endDate: "2017"
-  
-  - institution: "IUSS Pavia"
-    degree: "Ph.D."
-    field: "Economics and Social Sciences"
-    location: "Pavia, Italy"
-    endDate: "2016"
 
-  - institution: "Sant'Anna School of Advanced Studies"
+  - institution: "Sant'Anna School of Advanced Studies / IUSS Pavia"
     degree: "Ph.D."
     field: "Economics and Social Sciences"
-    location: "Pisa, Italy"
+    location: "Pisa, Italy / Pavia, Italy"
     endDate: "2016"
   
   - institution: "University of Firenze"
@@ -82,7 +74,7 @@ skills:
   - category: "Languages"
     items: ["JavaScript", "TypeScript", "Python", "Go"]
   - category: "Frameworks & Tools"
-    items: ["Node.js", "React", "Docker", "PostgreSQL", "AWS"]
+    items: ["Node.js", "SvelteKit", "Docker", "PostgreSQL", "AWS"]
   - category: "Practices"
     items: ["CI/CD", "Testing", "System Design", "Mentoring"]
 
