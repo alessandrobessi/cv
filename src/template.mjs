@@ -140,19 +140,14 @@ export function renderResume(data) {
       <p>${escapeHtml(summary.trim())}</p>
     </section>` : ''}
 
-    ${experience?.length ? `<section>
-      <h2>Experience</h2>
-      ${renderExperience(experience)}
-    </section>` : ''}
-
-    ${education?.length ? `<section>
-      <h2>Education</h2>
-      ${renderEducation(education)}
-    </section>` : ''}
-
     ${skills?.length ? `<section>
       <h2>Skills</h2>
       ${renderSkills(skills)}
+    </section>` : ''}
+
+    ${experience?.length ? `<section>
+      <h2>Experience</h2>
+      ${renderExperience(experience)}
     </section>` : ''}
 
     ${projects?.length ? `<section>
@@ -161,8 +156,13 @@ export function renderResume(data) {
     </section>` : ''}
 
     ${books?.length ? `<section>
-      <h2>Books</h2>
+      <h2>Technical Writing &amp; Books</h2>
       ${renderBooks(books)}
+    </section>` : ''}
+
+    ${education?.length ? `<section>
+      <h2>Education</h2>
+      ${renderEducation(education)}
     </section>` : ''}
   </main>
 </body>

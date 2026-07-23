@@ -1,6 +1,6 @@
 basics:
   name: "Alessandro Bessi"
-  title: "AI Engineer"
+  title: "AI Systems Engineer"
   email: "alessandro.bessi@proton.me"
   phone: "+39 331 3427237"
   location: "Remote / Firenze, Italy"
@@ -10,10 +10,6 @@ basics:
       url: "https://github.com/alessandrobessi"
     - label: "LinkedIn"
       url: "https://linkedin.com/in/alessandrobessi"
-    - label: "BessiLabs"
-      url: "https://bessilabs.com"
-    - label: "YouTube"
-      url: "https://www.youtube.com/@bessimaestro"
     - label: "Google Scholar"
       url: "https://scholar.google.com/citations?hl=en&user=4QiUu3AAAAAJ&view_op=list_works"
 
