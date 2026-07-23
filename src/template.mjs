@@ -91,6 +91,9 @@ function renderProjects(projects = []) {
         </span>
       </div>
       <p>${escapeHtml(project.description)}</p>
+      ${project.highlights?.length ? `<ul>
+        ${project.highlights.map((highlight) => `<li>${escapeHtml(highlight)}</li>`).join('\n        ')}
+      </ul>` : ''}
       ${project.tech ? `<div class="entry-subtitle">${project.tech.map(escapeHtml).join(', ')}</div>` : ''}
     </div>`
     )
@@ -114,8 +117,14 @@ function renderBooks(books = []) {
     .join('\n');
 }
 
+function renderResearch(research) {
+  const parts = [research.publications, research.citations].filter(Boolean).map(escapeHtml);
+  return `
+    <p>${parts.join(' · ')}${research.scholarUrl ? ` — <a href="${escapeHtml(research.scholarUrl)}">Google Scholar</a>` : ''}</p>`;
+}
+
 export function renderResume(data) {
-  const { basics, summary, experience, education, skills, projects, books } = data;
+  const { basics, summary, experience, education, skills, projects, books, research } = data;
 
   return `<!doctype html>
 <html lang="en">
@@ -153,6 +162,11 @@ export function renderResume(data) {
     ${projects?.length ? `<section>
       <h2>Projects</h2>
       ${renderProjects(projects)}
+    </section>` : ''}
+
+    ${research ? `<section>
+      <h2>Research Impact</h2>
+      ${renderResearch(research)}
     </section>` : ''}
 
     ${books?.length ? `<section>

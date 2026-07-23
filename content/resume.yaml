@@ -14,37 +14,45 @@ basics:
       url: "https://scholar.google.com/citations?hl=en&user=4QiUu3AAAAAJ&view_op=list_works"
 
 summary: >
-  Alessandro Bessi is an AI expert, data scientist, and software engineer
-  whose work spans machine learning, complex systems, and the infrastructure
-  required to make intelligent systems work in practice. Beyond the technical
-  work, he has managed small teams and regularly engages with prospects,
-  investors, and other stakeholders. He holds a Ph.D. and completed
-  postdoctoral research in Computer Science at the University of Southern
-  California, and his publications have been cited thousands of times.
+  AI systems engineer with a background spanning production machine
+  learning, software engineering, cloud infrastructure, and computational
+  research. I design and build reliable intelligent systems from model and
+  data workflows through APIs, distributed infrastructure, deployment, and
+  observability. My experience includes production AI in financial services,
+  enterprise cloud systems, technical product development, and highly cited
+  research on complex information systems. I combine deep technical work
+  with architectural decision-making and communication across engineering,
+  clients, executives, and investors.
 
 experience:
   - company: "Negentro"
-    role: "AI Engineer"
+    role: "AI Systems Engineer"
     location: "Remote / Milan, Italy"
     startDate: "2025-05"
     endDate: "Present"
     highlights:
-      - "Led migration of a monolith to service-oriented architecture, cutting deploy time by 60%."
-      - "Mentored 4 junior engineers; introduced code review guidelines adopted org-wide."
-      - "Designed an internal CLI tool used by 30+ engineers daily."
+      - "Designed and implemented core components of an AI-enabled employee-development platform using TypeScript, SvelteKit, GraphQL, Hasura, and PostgreSQL."
+      - "Developed the architecture for stateful coaching conversations, contextual memory, tasks, feedback, assessments, and organization-scoped data."
+      - "Translated product, privacy, and behavioral-science requirements into application workflows and technical design decisions."
+      - "Worked directly with founders, customers, prospects, and investors on product strategy, technical feasibility, and AI positioning."
+      - "Contributed across product architecture, backend integration, frontend implementation, deployment, and operational troubleshooting."
   - company: "Nextbit"
-    role: "AI Engineer"
+    role: "AI Systems Engineer"
     location: "Remote / Milan, Italy"
     startDate: "2017-03"
     endDate: "Present"
     highlights:
-      - "Built REST APIs serving 2M+ daily requests."
-      - "Reduced test suite runtime from 40 to 12 minutes."
+      - "Designed and delivered machine-learning and software systems for enterprise clients in financial services, including a neural-network-based antifraud solution deployed in production."
+      - "Built and operated cloud-native workloads on AWS across compute, networking, identity, container, storage, and deployment services."
+      - "Designed deployment and integration architectures involving Docker, ECS, Kubernetes, Rancher, PostgreSQL, Valkey, APIs, TLS/mTLS, and enterprise network controls."
+      - "Developed backend services and operational tooling in Python, Go, and TypeScript for secure API integration, state management, automation, and testing."
+      - "Led technical investigations across application, infrastructure, security, and client-network boundaries, converting ambiguous incidents into actionable designs and fixes."
+      - "Worked directly with enterprise stakeholders to gather requirements, evaluate architectural trade-offs, document solutions, and support production delivery."
 
 education:
   - institution: "Imperial College Business School"
-    degree: "Master in Venture Capital and Startup Investing"
-    field: "Entrepreneurship and Innovation"
+    degree: "Executive Education Programme"
+    field: "Venture Capital and Startup Investing"
     location: "Remote / London, UK"
     endDate: "2023"
 
@@ -72,21 +80,32 @@ education:
     location: "Firenze, Italy"
     endDate: "2010"
 
+research:
+  publications: "40+ peer-reviewed publications"
+  citations: "10,000+ citations (Google Scholar, as of 2026)"
+  scholarUrl: "https://scholar.google.com/citations?hl=en&user=4QiUu3AAAAAJ&view_op=list_works"
+
 skills:
-  - category: "Languages"
-    items: ["JavaScript", "TypeScript", "Python", "Go"]
-  - category: "Frameworks & Tools"
-    items: ["Node.js", "SvelteKit", "Docker", "PostgreSQL", "AWS"]
-  - category: "Practices"
-    items: ["CI/CD", "Testing", "System Design", "Mentoring"]
+  - category: "Programming"
+    items: ["Python", "Go", "TypeScript", "JavaScript", "SQL"]
+  - category: "AI & Data"
+    items: ["Machine Learning", "Neural Networks", "LLM Applications", "Small Language Models", "Model Inference", "Statistical Modelling", "Experiment Design"]
+  - category: "Cloud & Infrastructure"
+    items: ["AWS", "Docker", "ECS", "Kubernetes", "Rancher", "Linux", "Networking", "IAM", "TLS/mTLS", "CI/CD", "GitHub Actions"]
+  - category: "Backend & Data Systems"
+    items: ["Node.js", "REST APIs", "GraphQL", "Hasura", "PostgreSQL", "Valkey/Redis", "SvelteKit"]
 
 projects:
-  - name: "efficient-ai-lab"
+  - name: "Efficient AI Lab — CPU-first language-model systems"
     description: >
-      A 12-week research and engineering program investigating how to run
-      small language models efficiently on CPU-only infrastructure, spanning
-      transformer inference fundamentals through production deployment and
-      architectural decision-making for small language models.
+      An engineering laboratory for benchmarking, optimizing, and deploying
+      small language models on commodity CPU infrastructure. Includes
+      reproducible inference benchmarks, quantization experiments, Go/Python
+      tooling, containerized deployment, observability, and architecture
+      studies.
+    highlights:
+      - "Benchmarked latency, throughput, memory use, and quality across model and quantization configurations."
+      - "Built reproducible local and containerized inference environments."
     url: "https://github.com/alessandrobessi/efficient-ai-lab"
     tech: ["Python", "Go", "llama.cpp", "Docker", "Kubernetes"]
 
